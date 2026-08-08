@@ -82,7 +82,7 @@ if [[ "$(id -u)" = 0 ]]; then
 		
 		VERSIONex=$(echo $VERSION | sed 's/./.&/2g')
 		
-		tshockURL=$tshockURL/$TSVERSIONexv/TShock-$TSVERSIONex-for-Terraria-$VERSIONex-linux-amd64-Release.zip		
+		tshockURL=$tshockURL/$TSVERSIONexv/TShock-$TSVERSIONex-for-Terraria-$VERSIONex-linux-x64-Release.zip		
 		mkdir -p /tmp/tshock /opt/terraria /data/config/tshock /data/plugins
 		curl -sLo /tmp/tshock/tshock.zip $tshockURL
 		
