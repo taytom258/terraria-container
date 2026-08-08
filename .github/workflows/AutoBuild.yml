@@ -64,7 +64,7 @@ jobs:
       - name: Docker Meta - main
         if: github.ref_name == 'main' || github.ref_type == 'tag'
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           flavor: |
             latest=false
@@ -78,7 +78,7 @@ jobs:
       - name: Docker Meta - dev
         if: github.ref_name == 'dev'
         id: meta-dev
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           flavor: |
             latest=false
