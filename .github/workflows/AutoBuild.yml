@@ -27,7 +27,7 @@ jobs:
         uses: docker/setup-buildx-action@v4
     
       - name: Validate build configuration
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           platforms: linux/amd64
           call: check
@@ -48,7 +48,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build test image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           load: true
           tags: ${{ env.TEST_TAG }}
@@ -90,7 +90,7 @@ jobs:
 
       - name: Build and push - main
         if: github.ref_name == 'main' || github.ref_type == 'tag'
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
@@ -99,7 +99,7 @@ jobs:
       
       - name: Build and push - dev
         if: github.ref_name == 'dev'
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
