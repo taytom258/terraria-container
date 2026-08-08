@@ -1,7 +1,7 @@
 # Terraria Containerized - Vanilla & TShock
 
 
-[![AutoBuild](https://github.com/taytom258/terraria-container/actions/workflows/AutoBuild.yml/badge.svg?branch=main)](https://github.com/taytom258/terraria-container/actions/workflows/AutoBuild.yml)
+[![AutoBuild](https://github.com/taytom258/terraria-container/actions/workflows/AutoBuild.yml/badge.svg)](https://github.com/taytom258/terraria-container/actions/workflows/AutoBuild.yml)
 ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/taytom258/terraria-container/v1.1.2)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/taytom259/terraria-container/latest)
 ![Docker Pulls](https://img.shields.io/docker/pulls/taytom259/terraria-container)
